@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+                   /* ------------ HEADER --------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    opacity: 80%;
+}
+.logo {
+    margin-left: 0;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logospan{
+    color:#00ff00;
+}
+
+.navbar{
+	display: flex;
+
+}
+
+
+a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+
+}
+
+.navbar  a:hover,
+.navbar  a.active {
+    color: #00ff00;
+    opacity: 70%;
+    border-bottom: 3px solid white;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+}
+
+
+.dropdown-content {
+    margin-top: 3px;
+	display: none;
+	position: absolute;
+	background-color: #11141a;
+	opacity: 80%;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border-radius: 50px 10px 10px 50px;
+	-webkit-border-radius: 50px 10px 10px 50px;
+	-moz-border-radius: 50px 10px 10px 50px;
+	-ms-border-radius: 50px 10px 10px 50px;
+	-o-border-radius: 50px 10px 10px 50px;
+	-webkit-border-radius: 10px;
+}
+
+
+
+
+.dropdown-content a {
+	float: none;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    opacity: 70%;
+    border-radius: 50px 10px 10px 50px ;
+    -webkit-border-radius: 50px 10px 10px 50px ;
+    -moz-border-radius: 50px 10px 10px 50px ;
+    -ms-border-radius: 50px 10px 10px 50px ;
+    -o-border-radius: 50px 10px 10px 50px ;
+    color:#11141a;
+}
+  
+.dropdown:hover .dropdown-content {
+	display: block;
+
+}
+
+                   /* ------------ END  HEADER --------------*/
+
+
+
+                   /* ------------ Landing page home --------------*/
+
+.landingpage {
+    padding-right: 610px;
+    background-image: url(images/techdarkhd.png);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.header-title{
+    text-align: center;
+}
+
+ span {
+    color: #00ff00;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+p     {
+    font-size: 17px;
+    font-weight: 500;    
+    text-align: center;
+}
+
+.btn{
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #00c04b;
+    opacity: 70%;
+    color: white;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    font-weight: 400s;
+   
+}
+
+.btn:hover{
+    color: #00ff00;
+    background-color: white;
+    font-size: 22px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-weight: 500;
+    border: 1px solid #00ff00;
+    
+    
+}
+
+                   /* ------------ END landing page home --------------*/
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #11141a;
+    background-repeat: no-repeat;
+    font-size: 100px;
+    background-size: 1250px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+section:nth-child(odd) {
+    background: #323946;
+}
+
+.hamburger-menu {
+    display: none; /* Default sembunyikan tombol hamburger */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animasi hamburger */
+.hamburger-menu.open .bar:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+/* Responsif: tampilkan tombol hamburger di layar kecil */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar {
+        display: none; /* Sembunyikan menu navigasi utama */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #11141a;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        z-index: 99;
+    }
+
+    .navbar.active {
+        display: flex; /* Tampilkan menu navigasi saat tombol hamburger di-klik */
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    
+header {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+}
+
+.navbar {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+}
+
+.dropdown-content {
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+}
+
+.landingpage {
+        font-size: 24px;
+        padding: 30px 10px;
+}
+
+.header-title h1 {
+        font-size: 2em;
+}
+
+.btn {
+        font-size: 18px;
+        margin-top: 15px;
+}
+
+p {
+        font-size: 15px;
+}
+
+
+}
+
+@media (max-width: 480px) {
+    
+header {
+        padding: 20px 5px;
+}
+
+.navbar {
+        gap: 5px;
+}
+
+.landingpage {
+        font-size: 20px;
+        padding: 20px 5px;
+}
+
+.header-title h1 {
+        font-size: 2em;
+        align-items: center;
+}
+
+.btn {
+        font-size: 16px;
+}
+
+p {
+        font-size: 14px;
+}
+
+}
