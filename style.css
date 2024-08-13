@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: #267cc2;
+  }
+
+  .jumbotron h1{
+    color: rgba(0, 0, 0, 0.874);
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  .jumbotron p{
+    color: rgba(0, 0, 0, 0.874);
+    font-size: 25px;
+  }
+  
+  #projects {    
+    background-color: #267cc2;
+  }
+
+  #projects h2{
+    color: white;
+  }
+
+  .card{
+    border-radius: 20px;
+  }
+
+  .card img{ 
+    border-radius: 20px 20px 0px 0px;
+}
+  
+  section {
+    padding-top: 5rem;
+  }
+
+  #logo{
+    color: white;
+    font-weight: 400;
+
+  }
+
+  nav{
+    background-color: #267cc249;  
+  }
+
+  
+
+  #navbarNav ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px;
+
+  }
+
+
+  #navbarNav ul li a{
+    color: rgba(0, 0, 0, 0.874);
+    font-size: 17px;
+    font-weight: 400;
+    transition: .2s ease;
+    
+  }
+
+  #navbarNav ul li a:hover{
+    color: white;
+  }
+
+
+  #about{
+    background-color: white;
+  }
+
+  footer{
+    background-color: #267cc2;
+  }
+
