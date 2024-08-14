@@ -34,6 +34,11 @@
   .card img{ 
     border-radius: 20px 20px 0px 0px;
 }
+
+.card:hover{
+    padding: 10px;
+    border-radius: 20px;
+}
   
   section {
     padding-top: 5rem;
