@@ -196,6 +196,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script>
+            // Function to add 'active' class when the element is in view
+      function reveal() {
+          var reveals = document.querySelectorAll('.animate');
+      
+          for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+      
+              if (elementTop < windowHeight - elementVisible) {
+                  reveals[i].classList.add('active');
+              } else {
+                  reveals[i].classList.remove('active');
+              }
+          }
+      }
+      
+      window.addEventListener('scroll', reveal);
+      
+      // To check the scroll position on page load
+      reveal();
+
+      
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxb4qN6rwIX1f9yBG5wBYTjIzXX1VLKmNAnWqKKD91AuIKrzA_K1hi4tGR4_zcQrNjgiQ/exec'
       const form = document.forms['WPU-fahry'];
       const btnKirim = document.querySelector('.btn-kirim');
