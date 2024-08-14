@@ -29,6 +29,8 @@
 
   .card{
     border-radius: 20px;
+    box-shadow: 5px 5px blue;
+    margin: 10px;
   }
 
   .card img{ 
@@ -37,7 +39,7 @@
 
 .card:hover{
     box-shadow: 5px 5px blue;
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
 }
   
